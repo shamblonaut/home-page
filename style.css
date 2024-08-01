@@ -1,0 +1,47 @@
+/* --- CSS Reset (by Josh W Comeau) --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Intuitive box-sizing model */
+}
+* {
+  margin: 0; /* Remove default margin */
+}
+body {
+  line-height: 1.5; /* Accessible line-height */
+  -webkit-font-smoothing: antialiased; /* Improved text rendering */
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  /* Improved media defaults */
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Remove built-in form typography styles */
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; /* Avoid text overflows */
+}
+#root,
+#__next {
+  isolation: isolate; /* Root stacking context */
+}
+/* --- Reset End --- */
+
+h1 {
+  font-size: 5rem;
+  text-align: center;
+}
