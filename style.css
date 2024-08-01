@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 /* --- CSS Reset (by Josh W Comeau) --- */
 *,
 *::before,
@@ -41,7 +43,187 @@ h6 {
 }
 /* --- Reset End --- */
 
-h1 {
-  font-size: 5rem;
+:root {
+  --accent: #04a5e5;
+
+  --serif: "Playfair Display", serif;
+  --sans-serif: "Inter", sans-serif;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--sans-serif);
+}
+
+.about {
+  margin-bottom: 64px;
+}
+
+.about figure {
+  position: relative;
+}
+
+.about figure::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+
+  background-color: var(--accent);
+  width: 200%;
+  height: 200%;
+  transform: rotate(60deg) translateX(-85%);
+  box-shadow: 4px 4px 8px #00000060;
+}
+
+.about figure picture {
+  max-width: 80vw;
+  margin: 10vw auto;
+}
+
+.about figure img {
+  position: relative;
+  z-index: 2;
+
+  box-shadow: 4px 4px 8px #00000060;
+  border-radius: 8px;
+}
+.about figcaption {
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  color: #ffffff;
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 500;
   text-align: center;
+  text-shadow: -4px 4px 8px #00000080;
+}
+
+h1 {
+  text-align: center;
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.about p {
+  font-size: 1.5rem;
+  color: #404040;
+  padding: 0 5vw;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  margin: 32px;
+}
+
+.socials img {
+  width: 40px;
+  height: auto;
+  margin: 0 32px;
+}
+
+.about .socials img {
+  width: 32px;
+  margin: 0 24px;
+}
+
+.work {
+  margin-bottom: 64px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project {
+  max-width: 90vw;
+  margin: 32px 16px;
+  box-shadow: 4px 4px 8px 4px #00000020;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  min-width: 100%;
+  height: auto;
+
+  background-color: cyan;
+  font-size: 2.5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-details {
+  padding: 24px;
+
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr min-content;
+  row-gap: 8px;
+}
+
+.project-name {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+
+  align-self: center;
+  margin-left: 16px;
+
+  font-family: var(--serif);
+  font-weight: 400;
+}
+
+.project-links {
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+
+  align-self: center;
+  display: flex;
+}
+
+.project-links img {
+  min-width: 24px;
+  height: auto;
+  margin: 0 4px;
+}
+
+.project-description {
+  color: #4c4c4c;
+}
+
+.contact {
+  background-color: var(--accent);
+  color: #ffffff;
+  padding: 16px;
+}
+
+.contact > * {
+  margin: 32px 0;
+}
+
+.contact p {
+  font-size: 1.1rem;
+}
+
+.contact .callout {
+  font-size: 1.5rem;
+}
+
+.email {
+  padding-left: 8px;
 }
