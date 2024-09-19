@@ -34,6 +34,7 @@
     <link href="style.css" rel="stylesheet" />
   </head>
   <body>
+    <div class="decorator-square"></div>
     <main>
       <section class="about">
         <figure>
@@ -219,39 +220,44 @@
     </main>
     <footer>
       <section class="contact">
-        <h1>Contact me</h1>
-        <p class="callout">
-          Please get in touch if you think our work could be mutually
-          beneficial!
-        </p>
-        <div class="address">
-          <p>1234 Random Road</p>
-          <p>Random Town, California 12345</p>
+        <div>
+          <h1>Contact me</h1>
+          <p class="callout">
+            Please get in touch if you think our work could be mutually
+            beneficial!
+          </p>
+          <div class="address">
+            <p>1234 Random Road</p>
+            <p>Random Town, California 12345</p>
+          </div>
+          <div class="contact-details">
+            <p class="phone">555-555-5555</p>
+            <p class="email">shambles@shamblonaut.com</p>
+          </div>
+          <div class="socials" aria-role="socials">
+            <a href="https://github.com/shamblonaut">
+              <img src="assets/icons/github.svg" alt="Github" />
+            </a>
+            <a href="https://www.linkedin.com/in/shaheem-niyaz-5266b8260/">
+              <img src="assets/icons/linkedin.svg" alt="Linkedin" />
+            </a>
+            <a href="https://x.com/shamblonaut">
+              <img src="assets/icons/twitter.svg" alt="X (Twitter)" />
+            </a>
+          </div>
         </div>
-        <div class="contact-details">
-          <p class="phone">555-555-5555</p>
-          <p class="email">shambles@shamblonaut.com</p>
-        </div>
-        <div class="socials" aria-role="socials">
-          <a href="https://github.com/shamblonaut">
-            <img src="assets/icons/github.svg" alt="Github" />
-          </a>
-          <a href="https://www.linkedin.com/in/shaheem-niyaz-5266b8260/">
-            <img src="assets/icons/linkedin.svg" alt="Linkedin" />
-          </a>
-          <a href="https://x.com/shamblonaut">
-            <img src="assets/icons/twitter.svg" alt="X (Twitter)" />
-          </a>
-        </div>
+        <picture>
+          <!-- <source -->
+          <!--   media="(min-width: 600px)" -->
+          <!--   srcset="assets/images/footer.jpg" -->
+          <!-- /> -->
+          <img
+            src="assets/images/footer-800w.jpg"
+            alt="Footer Image"
+            class="footer-image"
+          />
+        </picture>
       </section>
-      <picture>
-        <source media="(min-width: 600px)" srcset="assets/images/footer.jpg" />
-        <img
-          src="assets/images/footer-800w.jpg"
-          alt="Footer Image"
-          class="footer-image"
-        />
-      </picture>
     </footer>
   </body>
 </html>
