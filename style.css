@@ -288,7 +288,7 @@ h1 {
   }
 
   .work {
-    max-width: 90vw;
+    width: 90vw;
   }
 
   .work h1 {
@@ -328,5 +328,74 @@ h1 {
   .contact picture img {
     height: 90%;
     width: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    text-align: left;
+  }
+
+  .decorator-square {
+    transform: rotate(-15deg) translate(100vw, -80vh);
+  }
+
+  .about {
+    max-width: 75vw;
+    height: 48vh;
+    padding-left: min(320px, 22vw);
+    transform: translateX(10vw);
+    position: relative;
+  }
+
+  .about p {
+    padding: 0 32px;
+  }
+
+  .about .socials {
+    margin-top: 64px;
+    justify-content: flex-end;
+  }
+
+  .about figure {
+    /* opacity: 0.25; */
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* transform: translate(-50%, 0); */
+    transform: translate(-50%, -8vh);
+  }
+
+  .about figcaption {
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -5rem);
+  }
+
+  .about figure picture img {
+    height: 64vh;
+    width: auto;
+  }
+
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+  }
+
+  .contact {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .contact > div > * {
+    padding: 16px 8px;
+  }
+
+  .contact .socials {
+    justify-content: flex-start;
+    margin-left: 32px;
+  }
+
+  .contact .socials img {
+    width: 48px;
   }
 }
